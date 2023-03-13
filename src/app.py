@@ -24,7 +24,7 @@ def status():
 
     md_detail = run_command("mdadm --detail /dev/md0")
     sensors = run_command("sensors")
-    hddtemp = run_command("hddtemp")
+    hddtemp = run_command("hddtemp /dev/sd?")
     smb_status = run_command("smbstatus")
     net_connections = run_command("netstat | grep ESTABLISHED")
 
