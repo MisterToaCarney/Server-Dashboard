@@ -13,8 +13,28 @@
     <h1 class="text-3xl text-center my-4">Kermit Status</h1>
 
     <div class="w-11/12 mx-auto shadow-xl rounded-xl p-5">
-        <h2 class="text-lg font-bold">Raid Array Status</h2>
-        <pre class="bg-base-300 p-2 rounded-md">{{ mdstat_output }}</pre>
+        <h2 class="text-lg font-bold">RAID Array Status</h2>
+        <pre class="bg-base-300 p-2 rounded-md whitespace-pre-wrap">{{ mdstat_output }}</pre>
+    </div>
+
+    <div class="w-11/12 mx-auto shadow-xl rounded-xl p-5">
+        <h2 class="text-lg font-bold">Sensors</h2>
+        <pre class="bg-base-300 p-2 rounded-md whitespace-pre-wrap">{{ sensors }}</pre>
+    </div>
+    
+    <div class="w-11/12 mx-auto shadow-xl rounded-xl p-5">
+        <h2 class="text-lg font-bold">HDD Temperatures</h2>
+        <pre class="bg-base-300 p-2 rounded-md whitespace-pre-wrap">{{ hddtemp }}</pre>
+    </div>
+
+    <div class="w-11/12 mx-auto shadow-xl rounded-xl p-5">
+        <h2 class="text-lg font-bold">File Server Status (SMB)</h2>
+        <pre class="bg-base-300 p-2 rounded-md whitespace-pre-wrap">{{ smb_status }}</pre>
+    </div>
+
+    <div class="w-11/12 mx-auto shadow-xl rounded-xl p-5">
+        <h2 class="text-lg font-bold">RAID Details</h2>
+        <pre class="bg-base-300 p-2 rounded-md whitespace-pre-wrap">{{ net_connections }}</pre>
     </div>
 
     
